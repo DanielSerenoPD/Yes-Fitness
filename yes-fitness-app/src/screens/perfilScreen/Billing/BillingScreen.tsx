@@ -43,6 +43,7 @@ export const BillingScreen = ({navigation}: Props) => {
       .get();
     let usuario = documento.data();
     if(usuario&&usuario.suscripcionActual.plan.name !== plan.name){
+      //Remplazar con la direccion del servidor donde alojaran la api
     axios.post('https://api-stripe-integration.herokuapp.com/subscription/update-subscription', {
       subscriptionId: usuario && usuario.suscripcionActual.id,
       price: plan.price,
@@ -69,21 +70,21 @@ export const BillingScreen = ({navigation}: Props) => {
     }
   };
   const actualizarPremium = async () => {
-    const plans = firestore().collection('Plans');
+    const plans = firestore().collection('paquetesClases');
     const name = await plans.where('name', '==', '30 Clases').get();
     name.forEach(doc => {
       actualizarSuscripcion(30, doc.data());
     });
   };
   const actualizarStandar = async () => {
-    const plans = firestore().collection('Plans');
+    const plans = firestore().collection('paquetesClases');
     const name = await plans.where('name', '==', '20 Clases').get();
     name.forEach(doc => {
       actualizarSuscripcion(20, doc.data());
     });
   };
   const actualizarBasic = async () => {
-    const plans = firestore().collection('Plans');
+    const plans = firestore().collection('paquetesClases');
     const name = await plans.where('name', '==', '10 Clases').get();
     name.forEach(doc => {
       actualizarSuscripcion(10, doc.data());
