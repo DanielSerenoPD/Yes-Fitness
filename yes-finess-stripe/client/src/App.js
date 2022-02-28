@@ -11,7 +11,7 @@ import {Elements} from '@stripe/react-stripe-js';
 import {loadStripe} from '@stripe/stripe-js';
 import {getPrices} from './actions/';
 //Reemplaza con la llave publica de stripe
-const stripePromise = loadStripe('pk_test_51KXY80IbEvLuKsNlek1O6qZ3PmhAb9qf6O4alwOYHYs0TDotsduglBnBMagn320lg7qsZrGHiE6RhWyYMlpgtiyD0049mR7y5M');
+const stripePromise = loadStripe('pk_test_aqui va su clave publica de stripe');
 function App() {
   const {prices} = useSelector(state=>state);
   const [pricesState, setState] = useState(prices)
