@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Acumin Pro Book";
+  src: url("./Assets/fonts/FontsFree-Net-Acumin-Pro-Book.ttf");
+}
+body {
+  font-family: "Acumin Pro Book";
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height:100vh;
+}
+h1 span label{
+  font-weight: 300;
+  opacity: 0.6 !important;
+}
+.separator{
+  min-width:100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.082);
+  margin-top: 6%;
+}
+@media (max-width: 380px) {
+  .separator{
+    margin-top: 1%;
+  }
+}

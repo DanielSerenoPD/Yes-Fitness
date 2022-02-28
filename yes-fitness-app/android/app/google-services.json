@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "773942840110",
+    "project_id": "yes-fitness-f2c41",
+    "storage_bucket": "yes-fitness-f2c41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773942840110:android:edd1f817988856c05708bf",
+        "android_client_info": {
+          "package_name": "com.yesfitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773942840110-s30l5j4r6st1od3ovc8pqnpcq448mi35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqfYEBbGPRmT9LYveTEqhY6bXwMkDkSs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773942840110-s30l5j4r6st1od3ovc8pqnpcq448mi35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
